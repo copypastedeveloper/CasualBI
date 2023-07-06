@@ -1,6 +1,6 @@
-using Casual.BI.API.LLM.Tools;
+using Casual.BI.LLM.Tools;
 
-namespace Casual.BI.API.LLM.Agent;
+namespace Casual.BI.LLM.Agent;
 
 public class Step
 {

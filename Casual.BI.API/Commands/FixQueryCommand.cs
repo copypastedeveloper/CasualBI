@@ -1,4 +1,4 @@
-using Casual.BI.API.LLM;
+using Casual.BI.LLM;
 
 namespace Casual.BI.API.Commands;
 

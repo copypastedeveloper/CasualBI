@@ -1,6 +1,6 @@
 using OpenAI.ObjectModels.ResponseModels;
 
-namespace Casual.BI.API.LLM;
+namespace Casual.BI.LLM;
 
 public interface IChatRequest
 {

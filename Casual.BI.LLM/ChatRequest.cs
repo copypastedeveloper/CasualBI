@@ -1,10 +1,10 @@
+using OpenAI;
 using OpenAI.Interfaces;
 using OpenAI.Managers;
-using OpenAI.ObjectModels;
 using OpenAI.ObjectModels.RequestModels;
 using OpenAI.ObjectModels.ResponseModels;
-using Config = Casual.BI.API.Startup.Startup;
-namespace Casual.BI.API.LLM;
+
+namespace Casual.BI.LLM;
 
 public class ChatRequest : IChatRequest
 {
@@ -12,7 +12,7 @@ public class ChatRequest : IChatRequest
     readonly float _temperature;
     readonly IOpenAIService _openAiService;
     public List<Message> Messages { get; set; } = new();
-
+    
     public static class Role
     {
         public const string Assistant = "assistant";
@@ -27,9 +27,9 @@ public class ChatRequest : IChatRequest
     
     ChatRequest(string model, float temperature)
     {
-        if (Startup.Startup.Container == null) throw new Exception("Container not initialized");
-        
-        _openAiService = Startup.Startup.Container.GetInstance<IOpenAIService>();
+        if (LLMConfiguration.Settings == null) throw new Exception("LLM not initialized");
+
+        _openAiService = new OpenAIService(new OpenAiOptions {ApiKey = LLMConfiguration.Settings.Key});
         _model = model;
         _temperature = temperature;
     }

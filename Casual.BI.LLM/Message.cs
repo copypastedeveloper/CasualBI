@@ -1,6 +1,6 @@
 using OpenAI.ObjectModels.RequestModels;
 
-namespace Casual.BI.API.LLM;
+namespace Casual.BI.LLM;
 
 public record Message(string Role, string Content)
 {

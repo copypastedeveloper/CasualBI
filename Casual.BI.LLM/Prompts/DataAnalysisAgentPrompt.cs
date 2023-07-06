@@ -1,7 +1,7 @@
-using Casual.BI.API.LLM.Tools;
-using Role = Casual.BI.API.LLM.ChatRequest.Role;
+using Casual.BI.LLM.Tools;
+using Role = Casual.BI.LLM.ChatRequest.Role;
 
-namespace Casual.BI.API.LLM.Prompts;
+namespace Casual.BI.LLM.Prompts;
 
 public class DataAnalysisAgentPrompt : AgentPrompt
 {

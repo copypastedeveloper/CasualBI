@@ -1,8 +1,7 @@
-using Casual.BI.API.LLM.Agent;
-using Casual.BI.API.LLM.Parsers;
-using Casual.BI.API.LLM.Prompts;
+using Casual.BI.LLM.Parsers;
+using Casual.BI.LLM.Prompts;
 
-namespace Casual.BI.API.LLM.Tools;
+namespace Casual.BI.LLM.Tools;
 
 public sealed class QueryEngine : ServerTool
 {

@@ -1,4 +1,4 @@
-using Casual.BI.API.LLM.Tools;
+using Casual.BI.LLM;
 using Lamar;
 using OpenAI.Interfaces;
 using OpenAI.Managers;
@@ -31,7 +31,6 @@ public class Startup
 
         Container = (IContainer) app.ApplicationServices;
         app.UseHttpsRedirection();
-
         app.UseRouting();
 
         app.UseCors(cfg => cfg.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
@@ -39,6 +38,7 @@ public class Startup
         app.UseAuthentication();
 
         app.UseMvc();
+        app.UseLLM();
     }
 
     public void ConfigureContainer(ServiceRegistry services)
@@ -52,7 +52,6 @@ public class Startup
             s.AssembliesFromApplicationBaseDirectory(a => !string.IsNullOrWhiteSpace(a.FullName) &&
                                                           a.FullName.StartsWith("casual.bi",
                                                               StringComparison.OrdinalIgnoreCase));
-            s.AddAllTypesOf<ITool>();
             s.WithDefaultConventions();
             s.LookForRegistries();
             s.With(new SettingsConvention(_configuration));

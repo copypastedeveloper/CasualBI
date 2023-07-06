@@ -1,4 +1,4 @@
-namespace Casual.BI.API.LLM.Prompts;
+namespace Casual.BI.LLM.Prompts;
 
 public abstract class Prompt
 {

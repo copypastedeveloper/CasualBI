@@ -1,6 +1,6 @@
 using Casual.BI.API.Commands;
-using Casual.BI.API.LLM;
-using Casual.BI.API.LLM.Parsers;
+using Casual.BI.LLM;
+using Casual.BI.LLM.Parsers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Casual.BI.API.Controllers

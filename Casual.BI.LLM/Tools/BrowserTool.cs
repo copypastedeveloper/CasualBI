@@ -1,4 +1,4 @@
-namespace Casual.BI.API.LLM.Tools;
+namespace Casual.BI.LLM.Tools;
 
 public abstract class BrowserTool : ITool
 {

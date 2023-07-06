@@ -1,6 +1,4 @@
-using Casual.BI.API.LLM.Agent;
-
-namespace Casual.BI.API.LLM.Tools;
+namespace Casual.BI.LLM.Tools;
 
 public abstract class ServerTool : ITool
 {

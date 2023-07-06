@@ -1,5 +1,5 @@
 using Casual.BI.API.Commands;
-using Casual.BI.API.LLM;
+using Casual.BI.LLM;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 

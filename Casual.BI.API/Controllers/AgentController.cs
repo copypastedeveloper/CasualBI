@@ -1,8 +1,8 @@
 using System.Text.Json;
 using Casual.BI.API.Commands;
-using Casual.BI.API.LLM.Agent;
-using Casual.BI.API.LLM.Prompts;
-using Casual.BI.API.LLM.Tools;
+using Casual.BI.LLM.Agent;
+using Casual.BI.LLM.Prompts;
+using Casual.BI.LLM.Tools;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +24,7 @@ public class AgentController : ControllerBase
             var agent = await Agent.FromPrompt(prompt);
             await using var sw = new StreamWriter(response.Body);
             
-            while (agent.CurrentStep?.Tool is ServerTool serverTool)
+            while (agent.CurrentStep is {Tool: ServerTool})
             {
                 await agent.Execute(async json =>
                 {

@@ -22,4 +22,8 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Casual.BI.LLM\Casual.BI.LLM.csproj" />
+    </ItemGroup>
+
 </Project>

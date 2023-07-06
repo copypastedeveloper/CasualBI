@@ -1,9 +1,9 @@
 using System.Text.Json;
-using Casual.BI.API.LLM.Parsers;
-using Casual.BI.API.LLM.Prompts;
-using Casual.BI.API.LLM.Tools;
+using Casual.BI.LLM.Parsers;
+using Casual.BI.LLM.Prompts;
+using Casual.BI.LLM.Tools;
 
-namespace Casual.BI.API.LLM.Agent;
+namespace Casual.BI.LLM.Agent;
 
 public class Agent
 {

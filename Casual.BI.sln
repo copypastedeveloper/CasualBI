@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casual.BI.API", "Casual.BI.API\Casual.BI.API.csproj", "{34E9C490-6CC1-4BAE-AD66-50549F39B43B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casual.BI.LLM", "Casual.BI.LLM\Casual.BI.LLM.csproj", "{008980A6-E9DF-493F-A175-5313F8885BC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{34E9C490-6CC1-4BAE-AD66-50549F39B43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E9C490-6CC1-4BAE-AD66-50549F39B43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E9C490-6CC1-4BAE-AD66-50549F39B43B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008980A6-E9DF-493F-A175-5313F8885BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008980A6-E9DF-493F-A175-5313F8885BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008980A6-E9DF-493F-A175-5313F8885BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008980A6-E9DF-493F-A175-5313F8885BC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

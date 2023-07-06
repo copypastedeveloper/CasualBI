@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace Casual.BI.API.LLM.Parsers;
+namespace Casual.BI.LLM.Parsers;
 
 public static class CodeParser
 {

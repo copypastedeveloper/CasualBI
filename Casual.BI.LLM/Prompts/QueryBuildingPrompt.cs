@@ -1,4 +1,4 @@
-namespace Casual.BI.API.LLM.Prompts;
+namespace Casual.BI.LLM.Prompts;
 using Role = ChatRequest.Role;
 
 public class QueryBuildingPrompt : Prompt<QueryBuildingPrompt>
