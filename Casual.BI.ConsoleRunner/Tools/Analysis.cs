@@ -1,7 +1,11 @@
-namespace Casual.BI.LLM.Tools;
+using Casual.BI.LLM;
+using Casual.BI.LLM.Tools;
 
-public sealed class Analysis: BrowserTool
+namespace Casual.BI.API.Tools;
+
+public sealed class Analysis: UITool
 {
     public override string Type => "Analysis";
     public override string Description => "A markdown compatible view to display freeform data analysis";
+
 }

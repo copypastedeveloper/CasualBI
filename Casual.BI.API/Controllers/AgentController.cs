@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Casual.BI.API.Commands;
+using Casual.BI.API.Tools;
 using Casual.BI.LLM.Agent;
 using Casual.BI.LLM.Prompts;
 using Casual.BI.LLM.Tools;
@@ -17,7 +18,8 @@ public class AgentController : ControllerBase
         HttpContext.Features.Get<IHttpResponseBodyFeature>()?.DisableBuffering();
         var response = HttpContext.Response;
         
-        var prompt = new DataAnalysisAgentPrompt(command.TableContext, command.Question);
+        var prompt = new DataAnalysisAgentPrompt(command.TableContext, command.Question, 
+            tools:new () {new Analysis(),new Graph(), new GridView(), new QueryEngine()});
 
         try
         {

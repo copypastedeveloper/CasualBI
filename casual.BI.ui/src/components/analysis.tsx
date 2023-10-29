@@ -16,9 +16,6 @@ const Analysis : React.FC<AnalysisProps> = ({question,data}) => {
 
         const table = tablemark(data);
 
-        console.log("questions",question);
-        console.log("data",data);
-
         ai.analyze(table,question, (chunk) => {
             setAnalysis(a => a + chunk);
         });

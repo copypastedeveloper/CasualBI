@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casual.BI.API", "Casual.BI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casual.BI.LLM", "Casual.BI.LLM\Casual.BI.LLM.csproj", "{008980A6-E9DF-493F-A175-5313F8885BC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casual.BI.ConsoleRunner", "Casual.BI.ConsoleRunner\Casual.BI.ConsoleRunner.csproj", "{38495470-3E3F-4B60-AEB6-493146A2AD49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{008980A6-E9DF-493F-A175-5313F8885BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{008980A6-E9DF-493F-A175-5313F8885BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{008980A6-E9DF-493F-A175-5313F8885BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38495470-3E3F-4B60-AEB6-493146A2AD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38495470-3E3F-4B60-AEB6-493146A2AD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38495470-3E3F-4B60-AEB6-493146A2AD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38495470-3E3F-4B60-AEB6-493146A2AD49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

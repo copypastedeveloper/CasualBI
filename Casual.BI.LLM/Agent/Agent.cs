@@ -14,7 +14,6 @@ public class Agent
 
     public static async Task<Agent> FromPrompt(AgentPrompt prompt)
     {
-        
         //gpt-4 provides significantly better steps than 3.5-turbo :(
         var chatRequest = ChatRequest.Create("gpt-4").FromMessages(prompt.AsChatMessages());
 

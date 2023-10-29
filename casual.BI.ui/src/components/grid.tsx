@@ -21,13 +21,10 @@ export const gridReportDefaults : Report = {
 
 const Grid : React.FC<GridProps> = ({innerRef, data}) => {
     const newReport : Report = {...gridReportDefaults};
-    
+    newReport.dataSource = {data};
     return (
 
             <>
-                <table>
-                    {}
-                </table>
                 <WebDataRocksReact.Pivot 
                 toolbar={false}
                 width="100%"

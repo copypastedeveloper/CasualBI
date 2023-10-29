@@ -14,5 +14,5 @@ public class Step
     public string ActionType { get; init; }
     public ITool Tool { get; set; }
     public string Task { get; init; }
-    public string? Result { get; set; }
+    public dynamic? Result { get; set; }
 }
