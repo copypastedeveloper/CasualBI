@@ -52,6 +52,12 @@ public class ChatRequest : IChatRequest
         return this;
     }
 
+    IChatRequest IChatRequest.WithPrompt(string prompt)
+    {
+        _contextManager.AddMessage(new(Role.User, prompt,"prompt"));
+        return this;
+    }
+
     IChatRequest IChatRequest.FromMessages(List<Message> chatMessages)
     {
         chatMessages.ForEach(_contextManager.AddMessage);
